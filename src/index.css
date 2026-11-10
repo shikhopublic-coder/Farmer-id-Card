@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-card-serif {
+  font-family: 'Tinos', 'Noto Serif Bengali', 'Noto Sans Bengali', 'Times New Roman', Times, Georgia, serif;
+  font-feature-settings: "liga" 1, "dlig" 1;
+  text-rendering: optimizeLegibility;
+}
+
+.font-card-assamese {
+  font-family: 'Noto Sans Bengali', 'Noto Serif Bengali', 'Tinos', system-ui, sans-serif;
+  font-feature-settings: "liga" 1, "dlig" 1;
+  text-rendering: optimizeLegibility;
+}
+
+/* Print specifications for CR80 PVC card and A4 paper */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-container {
+    padding: 10mm !important;
+    background: white !important;
+  }
+}
+
+.card-face {
+  aspect-ratio: 1011 / 638;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AgriStack Kisan ID Card Portal",
+  "description": "Official AgriStack digital farmer ID card generator, registry verification, and print-ready PVC card maker for Indian farmers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
